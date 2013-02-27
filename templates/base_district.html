@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block menu %}
+    {% for MenuItem in TarusaDistrict %}
+        <li><a href="{{ MenuItem.link }}">{{ MenuItem.name }}</li>
+    {% endfor %}
+{% endblock %}
